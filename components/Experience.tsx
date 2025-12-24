@@ -94,7 +94,7 @@ export const Experience: React.FC<ExperienceProps> = ({
         <pointLight position={[0, 0, 0]} intensity={1.5} color="#FFD700" distance={15} decay={2} />
       </group>
 
-      <EffectComposer disableNormalPass>
+      <EffectComposer enableNormalPass={false}>
         {/* Luxury Glow */}
         <Bloom 
           luminanceThreshold={0.8} 
